@@ -4,6 +4,8 @@ I love using Atomic CSS libraries like [Tachyons](http://tachyons.io), so much s
 
 Therefore, I made this little script that generates a `css.snippets` file from a given CSS file for use with Vim and UltiSnips.
 
+As an example, I've added an `example-css.snippets` file to this repo, which contains all the snippets generated from Tachyons.
+
 ## Usage Instructions
 
 Clone this repo and copy your CSS file into this folder.
