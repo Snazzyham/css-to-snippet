@@ -1,0 +1,12 @@
+{
+  "name": "css-to-snippet",
+  "version": "1.0.0",
+  "description": "a node script that takes in a css file and turns it into snippets for use with Vim",
+  "main": "index.js",
+  "keywords": [],
+  "author": "soham adwani <sohamthenerd@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "css": "^2.2.4"
+  }
+}
