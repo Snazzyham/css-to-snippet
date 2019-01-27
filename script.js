@@ -23,5 +23,8 @@ obj.stylesheet.rules.forEach(item => {
     ws.write("endsnippet\n");
   }
 });
-
+console.log("CONVERSION COMPLETE.");
+console.log(
+  "Please don't forget to copy the css.snippets file to your snippets folder. Thanks."
+);
 ws.close();
