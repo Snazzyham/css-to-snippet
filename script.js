@@ -16,11 +16,13 @@ obj.stylesheet.rules.forEach(item => {
   if (item.type == "rule") {
     let selector = item.selectors[0];
     let cls = selector.substring(1).split(" ");
-    ws.write(`snippet ${cls[0]} \n`);
-    item.declarations.forEach(d => {
-      ws.write(`${d.property}: ${d.value} \n`);
-    });
-    ws.write("endsnippet\n");
+    if (cls[0].length > 0) {
+      ws.write(`snippet ${cls[0]} \n`);
+      item.declarations.forEach(d => {
+        ws.write(`${d.property}: ${d.value};\n`);
+      });
+      ws.write("endsnippet\n");
+    }
   }
 });
 console.log("CONVERSION COMPLETE.");
